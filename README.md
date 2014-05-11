@@ -13,7 +13,7 @@ you need to get Xcode, or the Apple Command Line tools. Or both.
 
 Then, run this one-liner:
 
-    bash < <(curl -s https://raw.github.com/andycroll/macsetup/master/mac)
+    bash < <(curl -s https://raw.github.com/thatrubylove/macsetup/master/mac)
 
 What it sets up
 ---------------
