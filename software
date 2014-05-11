@@ -5,27 +5,8 @@ brew install brew-cask
 echo "[Install] Brew Cask Betas"
 brew tap caskroom/versions
 
-echo "[Install] QuickLook Plugins"
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package
-
-echo "[Install] Sublime (open atom.io)"
-brew cask install sublime-text3
-open http://atom.io
-
 echo "[Install] Skype"
 brew cask install skype
-
-echo "[Install] GitX (L)"
-brew cask install gitx-l
-
-echo "[Install] Bartender"
-brew cask install bartender
-
-echo "[Install] nvAlt"
-brew cask install nvalt
-
-echo "[Install] Flux"
-brew cask install flux
 
 echo "[Install] Dropbox"
 brew cask install dropbox
@@ -33,10 +14,6 @@ brew cask install dropbox
 echo "[Install] VLC"
 brew cask install vlc
 
-echo "### Safari Extensions"
+echo "[Install] Chrome"
+brew cask install google-chrome
 
-echo "[Safari] Detox"
-open http://shauninman.com/archive/2012/01/19/detox
-
-echo "[Safari] Ghostery"
-open http://www.ghostery.com/

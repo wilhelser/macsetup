@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
 
-echo "[Config] Checking for SSH key, generating one if it doesn't exist ..."
-  [[ -f ~/.ssh/id_rsa.pub ]] || ssh-keygen -t rsa
-
-echo "[Config] Copying public key to clipboard. Paste it into your Github account"
-  [[ -f ~/.ssh/id_rsa.pub ]] && cat ~/.ssh/id_rsa.pub | pbcopy
-  open https://github.com/account/ssh
+echo "[Config] Changing your shell to zsh ..."
+  chsh -s $(which zsh)
 
 echo "[Install] Homebrew"
   /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
@@ -21,22 +17,26 @@ echo "[Install] Postgres"
 echo "[Install] Ack"
   brew install ack
 
+echo "[Install] tmate"
+  brew tap nviennot/tmate
+  brew install tmate
+  
+echo "[Install] vim"
+  brew install vim
+
 echo "[Install] ImageMagick"
   brew install imagemagick --disable-openmp
-
-echo "[Install] QT"
-  brew install qt
 
 echo "[Install] Ctags" # used by sublime
   brew install ctags
 
-echo "[User Input] Run Extra Scripts"
-echo "bash < <(curl -s https://raw.github.com/andycroll/macsetup/master/ruby)"
-echo "bash < <(curl -s https://raw.github.com/andycroll/macsetup/master/heroku)"
-echo "bash < <(curl -s https://raw.github.com/andycroll/macsetup/master/software)"
+echo "[Install] vundle"
+  git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  cp .vimrc ~/.vimrc
 
-echo "[User Input] Install dotfiles"
-  open 'http://github.com/andycroll/dotfiles'
+echo "[Install] Run Extra Scripts"
+echo "bash <(curl -s https://raw.github.com/thatrubylove/macsetup/master/ruby)"
+echo "bash <(curl -s https://raw.github.com/thatrubylove/macsetup/master/software)"
 
-echo "[User Input] Run Dropbox linking once synced"
-echo "bash < <(curl -s https://raw.github.com/andycroll/macsetup/master/dropbox)"
+echo "[Install] dotfiles"
+  git clone 'http://github.com/thatrubylove/dotfiles' ~/.dotfiles && cd ~/.dotfiles && rake install
