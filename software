@@ -17,3 +17,8 @@ brew cask install vlc
 echo "[Install] Chrome"
 brew cask install google-chrome
 
+echo "[Install] Teamviewer"
+brew cask install teamviewer
+
+echo "[Install] Google hangouts plugin"
+brew cask install google-hangouts
