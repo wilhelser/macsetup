@@ -22,3 +22,9 @@ brew cask install teamviewer
 
 echo "[Install] Google hangouts plugin"
 brew cask install google-hangouts
+
+echo "[Install] transmission"
+brew cask install transmission
+
+echo "[Install] flowdock"
+brew cask install flowdock

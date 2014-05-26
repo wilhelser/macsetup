@@ -1,6 +1,7 @@
 # Mac Setup
 
-A simple set of scripts used to build a simple Rails dev machine.
+A simple set of scripts used to build a simple Ruby/Rails development machine. Essentially, I reinstall often and puppet and chef are just too much damn owrk for osx.
+
 
 Install
 -------
@@ -29,17 +30,11 @@ What it sets up
 * Ruby 1.9.3 & 2.1.0 stable (for writing general-purpose code)
 * Bundler gem (for managing Ruby libraries)
 * Rails gem (for writing web applications)
-* Heroku toolbelt (for interacting with the Heroku API)
-* Heroku accounts plugin (for using multiple Heroku accounts like a client's account)
-* Heroku config plugin (for pulling config variables locally to be used as ENV variables)
-* Powder gem (to serve Rails apps)
-* Sublime Text 3
-* Chrome
-* Gitx
-* Flux
-* VLC
-* Dropbox
-* Some nice quicklook plugins
+* Chrome (inspect that madness)
+* VLC (Video be essential and shit)
+* Flowdock (for development chat)
+* Transmission (because torrents are awesome)
+* Dropbox (for persisting files across stupidity)
 
 It should take about 30 minutes for everything to install, depending on your
 machine and your Internet connection
