@@ -6,15 +6,15 @@ A simple set of scripts used to build a simple Ruby/Rails development machine. E
 Install
 -------
 
-Before you run this script, which extensively uses [Homebrew](http://brew.sh),
-you need to get Xcode, or the Apple Command Line tools. Or both.
+Before you run this script, which extensively uses [Homebrew](http://brew.sh), you need to the Apple Command Line tools.
 
-* [Command Line Tools for XCode](https://developer.apple.com/downloads/)
-* [Xcode](https://itunes.apple.com/en/app/xcode/id497799835?mt=12)
+```
+xcode-select --install
+```
 
 Then, run this one-liner:
 
-    bash < <(curl -s https://raw.github.com/thatrubylove/macsetup/master/mac)
+    curl -L https://raw.github.com/thatrubylove/macsetup/master/mac || sh
 
 What it sets up
 ---------------

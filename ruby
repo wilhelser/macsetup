@@ -5,9 +5,6 @@ echo "[Install] chruby"
 echo "[Install] Ruby stable"
   ruby-install ruby stable
 
-echo "[Config] Ruby stable set as default"
-  chruby ruby stable
-
 echo "[Install] gem bundler"
   gem install bundler --no-rdoc --no-ri
 
