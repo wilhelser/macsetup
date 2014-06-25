@@ -14,17 +14,11 @@ brew cask install dropbox
 echo "[Install] VLC"
 brew cask install vlc
 
-echo "[Install] Chrome"
-brew cask install google-chrome
-
 echo "[Install] Teamviewer"
 brew cask install teamviewer
 
 echo "[Install] Google hangouts plugin"
 brew cask install google-hangouts
-
-echo "[Install] transmission"
-brew cask install transmission
 
 echo "[Install] flowdock"
 brew cask install flowdock
